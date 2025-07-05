@@ -1,0 +1,21 @@
+In this workshop, I learned how to manage dynamic memory for arrays in a class by
+using pointers with new and delete[]. I implemented the Rule of Three by writing
+a destructor, copy constructor, and copy assignment operator to properly handle
+copying and cleanup of dynamic data. This helped me understand why these special
+functions are important to avoid memory problems.
+
+I also learned how to read data from files by counting the number of entries first,
+then loading the numbers into a dynamically allocated array. I practiced adding
+new elements to the array by resizing it and copying existing data over, then
+sorting the array to keep the numbers in order.
+
+Another thing I worked on was overloading operators, especially += to add numbers,
+and writing a display function that outputs the numbers with formatted precision,
+without using iomanip.
+
+One challenge I faced was ensuring that my copy constructor and assignment operator
+worked correctly to avoid shallow copy issues. It took some trial and error to get
+memory management right and avoid leaks or crashes.
+
+Overall, this workshop gave me good practice with dynamic arrays, file I/O, operator
+overloading, and writing safe copy logic in C++.
