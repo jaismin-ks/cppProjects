@@ -1,0 +1,26 @@
+Name: Jaismin Kaur Sidhu
+Email: jksidhu35@myseneca.ca
+Student ID: 129603247
+Date: June 8, 2025
+
+I have done all the coding by myself and only copied the code 
+that my professor provided to complete my workshops and assignments.
+
+
+In the process of doing this workshop, I improved my skills in using 
+constructors, destructors, and delegated constructors. I also used 
+member functions, and dynamic memory allocation for array of Labels, 
+and also for character array for content.
+I also learned more about how to format my output correctly, by using fill 
+and width in the print function. I also learned that I can use cout << ""; 
+to manually trigger width and fill I set beforehand, to ensure it gets 
+applied properly.
+I had some trouble in formatting the label frame correctly, since the 
+frame had to be made in a very specific order, so every time I used a cout, 
+I had to make sure I was using the right index for m_frame, it took me a 
+couple tries, but I drew it on paper and it made more sense. I also had a 
+little confusion Label::Label(const char* frame, const char* content) function. 
+But I understood I needed to make a dynamically allocated array of 71 characters, 
+up to 70 chars that could be printed, and one last space for null terminator. I was 
+using 71 for length of array, but this confused me when it came to using indexes, 
+since they start from 0. But i figured it out in the end. 
