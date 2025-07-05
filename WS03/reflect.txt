@@ -1,0 +1,37 @@
+Name: Jaismin Kaur Sidhu
+Email: jksidhu35@myseneca.ca
+Student ID: 129603247
+Date: June 1, 2025
+
+I have done all the coding by myself and only copied the code 
+that my professor provided to complete my workshops and assignments.
+
+Reflection:
+
+In Workshop 3, I practiced my skills of modular programming, 
+object-oriented design, and dynamic memory management in C++. 
+Splitting the program into separate modules, such as Food.cpp 
+and CalorieList.cpp, helped organize my code clearly. 
+For example, all the food-related logic including validation 
+and display is inside the Food class, while the CalorieList 
+class manages the collection of foods dynamically. 
+This made my code easier to read and maintain.
+
+One important thing I learned was how to manage dynamic arrays 
+of objects safely using pointers. In CalorieList::init(int capacity), 
+I used new to allocate an array of Food objects, and in 
+CalorieList::reset(), I freed the memory with delete[] to 
+avoid memory leaks. 
+
+A challenge I faced was figuring out how to handle invalid food 
+items when showing the list. The program needed to mark those 
+invalid items clearly, but only add up and show the total calories 
+if everything was valid. I solved this by carefully checking which 
+items were valid and making sure the total calories only included 
+those. This helped make the output look right and meet the requirements.
+
+This workshop helped me learn how to organize my code better and work 
+with classes and memory. A big part of the process was debugging my 
+program by running it many times and comparing the output to the sample 
+output file. This helped me find formatting errors and fix them so my 
+program’s output matched exactly what was expected.
