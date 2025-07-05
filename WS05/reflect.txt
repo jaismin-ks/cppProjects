@@ -1,0 +1,43 @@
+Name: Jaismin Kaur Sidhu
+Email: jksidhu35@myseneca.ca
+Student ID: 129603247
+Date: June 13, 2025
+
+I have done all the coding by myself and only copied the code 
+that my professor provided to complete my workshops and assignments.
+
+In completing Workshop 3, I learned about operator overloading,
+and type conversions. I made class Mark that stores a student’s 
+mark and allows converting it to different formats like an integer, 
+letter grade, or GPA. 
+
+I learned that the prefix increment operator can return by reference 
+because it modifies the object and returns it directly, so returning 
+a reference is efficient. But the postfix increment has to return the 
+original value before the change, so it must return by value, which 
+means it returns a copy. I tested this by creating a simple class 
+and found that prefix ++a modifies the object and allows chaining by 
+returning a reference, while postfix a++ returns a temporary copy and 
+can't be chained.
+
+The operator+= returns by reference (Mark& Mark::operator+=(int value)) 
+because it changes the object itself and lets us do things like a += b += c;. 
+But the operator+ returns by value since it creates a new object and 
+doesn’t change the originals.
+
+To stop automatic conversions when using the conversion operators, I 
+marked the conversion, I used the explicit keyword in the function declaration. 
+For example, explicit operator char() const; 
+means the compiler won’t convert Mark to char unless explicitly asked to do that.
+
+Helper operators like int& operator+=(int& value, const Mark& theMark) 
+can’t be member functions because the left operand is not a Mark object 
+(it’s an int). Member operators always take the object as the left side, 
+so these helpers must be outside the class.
+
+One difficulty I had was making sure that the Mark object stays valid when 
+its value changes. I added a isValid() function and used it in all the 
+operator overloads to check whether the value is between 0 and 100. If it 
+goes out of range, I reset the value to -1. This made it easier to manage 
+invalid states and made sure the conversion functions like operator char() 
+and operator double() returned the correct results.
