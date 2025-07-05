@@ -1,0 +1,29 @@
+Name: Jaismin Kaur Sidhu
+Email: jksidhu35@myseneca.ca
+Student ID: 129603247
+Date: May 27, 2025
+
+I have done all the coding by myself and only copied the code 
+that my professor provided to complete my workshops and assignments.
+
+Reflection:
+In this project, I learned how to effectively manage dynamic 
+memory with pointers, especially when dealing with arrays of 
+structs. I learned how to use new and delete[] to avoid memory 
+leaks, and how to check for memory leaks. I learned how to 
+manually handle dynamically allocated memory, and that 
+we need to free it at the end of the program. 
+
+I also learned how function overloading and default parameters 
+work in C++, which helped simplify the display function for 
+different use cases. I also learned how to handle references in 
+function parameters.
+
+One challenge I faced was ensuring that all allocated memory was 
+properly deallocated in the cleanUp function. I realized I had 
+to delete each postalCode string individually with a loop before 
+deleting the array of Region structs. Initially, I missed deleting 
+the inner pointers, which would have caused leaks.
+
+Overall, I learned more about working wiht pointers, 
+dynamic memory, and modular programming in C++.
